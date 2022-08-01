@@ -1,0 +1,13 @@
+.home__bg{
+  height: 92vh;
+  background-image: url("../../assets/images/home-image.avif");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.home__button-icon {
+  display: inline-block;
+  margin-left: 10px;
+}

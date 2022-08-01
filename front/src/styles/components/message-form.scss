@@ -1,0 +1,15 @@
+.messages-output{
+  height: 80vh;
+  width: 100%;
+  border: 1px solid $color-light-gray;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  overflow-y: scroll;
+}
+
+.message-form__button{
+  width: 100%;
+  text-align: center;
+  background-color: $color-green;
+  border: none;
+}

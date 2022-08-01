@@ -1,0 +1,12 @@
+@import "variables";
+@import "global";
+@import "~bootstrap/scss/bootstrap.scss";
+
+//Pages
+@import "pages/home";
+@import "pages/login";
+@import "pages/signup";
+@import "pages/chat";
+
+//Components
+@import "components/message-form";
