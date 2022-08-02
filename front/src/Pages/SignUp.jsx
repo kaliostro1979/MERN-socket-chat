@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Button, Col, Container, Form, Row} from "react-bootstrap";
-import {Link} from "react-router-dom";
+import {useSignupUserMutation} from "../services/appApi";
+import {Link, useNavigate} from "react-router-dom";
 import BotImage from "../assets/images/bot.avif"
 import {FaPlus} from "react-icons/fa";
 
@@ -14,6 +15,8 @@ const SignUp = () => {
     const [image, setImage] = useState(null)
     const [uploadingImage, setUploadingImage] = useState(false)
     const [previewImage, setPreviewImage] = useState(null)
+    const [signUpUser, {isLoading, error}] = useSignupUserMutation()
+    const navigate = useNavigate()
 
 
     const validateImage = (event) => {
@@ -67,6 +70,12 @@ const SignUp = () => {
         }
         const url = await uploadImage(image)
         console.log(url);
+        signUpUser({name, email, password, picture: url}).then(({data})=>{
+            if (data){
+                console.log(data)
+                navigate("/chat")
+            }
+        })
     }
 
 

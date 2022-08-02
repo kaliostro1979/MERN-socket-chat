@@ -1,10 +1,13 @@
 import React, {useState} from 'react';
 import {Button, Col, Container, Form, Row} from "react-bootstrap";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
+import {useLoginUserMutation} from "../services/appApi";
 
 const Login = () => {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+    const [userLogin, {isLoading, error}] = useLoginUserMutation()
+    const navigate = useNavigate()
 
     const handleInput = (e) => {
         switch (e.target.name) {
@@ -19,6 +22,11 @@ const Login = () => {
 
     const handleLogin = (event)=>{
         event.preventDefault()
+        userLogin({email, password}).then(({data})=>{
+            if (data){
+                navigate("/chat")
+            }
+        })
     }
 
     return (
