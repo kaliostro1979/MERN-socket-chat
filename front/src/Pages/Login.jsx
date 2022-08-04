@@ -1,13 +1,15 @@
-import React, {useState} from 'react';
-import {Button, Col, Container, Form, Row} from "react-bootstrap";
+import React, {useContext, useState} from 'react';
+import {Button, Col, Container, Form, Row, Spinner} from "react-bootstrap";
 import {Link, useNavigate} from "react-router-dom";
 import {useLoginUserMutation} from "../services/appApi";
+import {AppContext} from "../context/appContext";
 
 const Login = () => {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [userLogin, {isLoading, error}] = useLoginUserMutation()
     const navigate = useNavigate()
+    const {socket} = useContext(AppContext)
 
     const handleInput = (e) => {
         switch (e.target.name) {
@@ -24,6 +26,7 @@ const Login = () => {
         event.preventDefault()
         userLogin({email, password}).then(({data})=>{
             if (data){
+                socket.emit("new-user")
                 navigate("/chat")
             }
         })
@@ -36,6 +39,7 @@ const Login = () => {
                 <Col md={7} className={"d-flex flex-column justify-content-center align-items-center"}>
                     <Form className={"chat-form"} onSubmit={(e)=>handleLogin(e)}>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
+                            {error && <p className={"alert alert-danger"}>{error.data}</p>}
                             <Form.Label>Email address</Form.Label>
                             <Form.Control
                                 type="email"
@@ -62,7 +66,7 @@ const Login = () => {
                             />
                         </Form.Group>
                         <Button variant="primary" type="submit">
-                            Login
+                            {isLoading ? <Spinner animation={"grow"}/> : "Login"}
                         </Button>
                         <div className={"py-4"}>
                             <p className={"text-center"}>Don't have account? <Link to={"/signup"}>SignUp</Link></p>

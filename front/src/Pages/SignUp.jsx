@@ -93,6 +93,7 @@ const SignUp = () => {
                                        accept={"image/png, image/jpeg, image/jpg"} onChange={(e) => validateImage(e)}/>
                             </label>
                         </div>
+                        {error && <p className={"alert alert-danger"}>{error.data}</p>}
                         <Form.Group className="mb-3" controlId="formBasicНаме">
                             <Form.Label>Name</Form.Label>
                             <Form.Control
@@ -124,7 +125,9 @@ const SignUp = () => {
                                 name={"password"}
                                 onChange={(e) => handleInput(e)}/>
                         </Form.Group>
-                        <Button variant="primary" type="submit">{uploadingImage ? "Signing up..." : "Signup"}</Button>
+                        <Button variant="primary" type="submit">
+                            {uploadingImage || isLoading ? "Signing up..." : "Signup"}
+                        </Button>
                         <div className={"py-4"}>
                             <p className={"text-center"}>Already have an account? <Link to={"/login"}>Login</Link></p>
                         </div>

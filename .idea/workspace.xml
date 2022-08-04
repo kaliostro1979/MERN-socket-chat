@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="082f11bf-0430-449f-80b2-4cb7b292e49e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/back/models/Message.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/context/appContext.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/styles/components/sidebar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/NEW MERN CHAT.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/MessageForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/Components/MessageForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/Components/Sidebar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/Pages/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Pages/SignUp.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/Pages/SignUp.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/features/userSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/features/userSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/styles/components/message-form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/styles/components/message-form.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/styles/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/styles/global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/styles/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/styles/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/styles/variables.scss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="SCSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Co2AUbJATaizzPyGdbDnEMdAB4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "javascript.nodejs.core.library.configured.version": "16.0.0",
+    "javascript.nodejs.core.library.typings.version": "16.0.0",
+    "last_opened_file_path": "F:/02_08_2022/MERN-socket-chat",
+    "list.type.of.created.stylesheet": "SCSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2021.1.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="082f11bf-0430-449f-80b2-4cb7b292e49e" name="Changes" comment="" />
+      <created>1659454473767</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659454473767</updated>
+      <workItem from="1659454475300" duration="22761000" />
+      <workItem from="1659539268559" duration="481000" />
+      <workItem from="1659540806902" duration="522000" />
+      <workItem from="1659554478809" duration="3833000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

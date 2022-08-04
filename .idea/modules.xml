@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/NEW MERN CHAT.iml" filepath="$PROJECT_DIR$/.idea/NEW MERN CHAT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/MERN-socket-chat.iml" filepath="$PROJECT_DIR$/.idea/MERN-socket-chat.iml" />
     </modules>
   </component>
 </project>

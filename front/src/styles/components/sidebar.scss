@@ -1,0 +1,43 @@
+.list-title{
+  margin-top: 25px;
+}
+
+.rooms-list {
+  margin: 25px 0;
+}
+
+.members-list__item, .rooms-list__item {
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-light-gray;
+  }
+}
+
+.member-status{
+  position: relative;
+}
+
+.member-status__image{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}
+
+.member-status__icon{
+  position: absolute;
+  bottom: 0;
+  right: 7px;
+  width: 15px;
+  height: 15px;
+  &.online {
+    color: $color-green;
+  }
+
+  &.offline {
+    color: $color-red;
+  }
+}
